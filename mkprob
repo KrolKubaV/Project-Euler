@@ -75,7 +75,7 @@ def make(n):
         return
 
     title, body = _fetch_problem(n)
-    heading = f"# {title}\n" if title else f"# Problem {n}\n"
+    heading = f"# Problem {n} - {title}\n" if title else f"# Problem {n}\n"
 
     cells = []
     if body:
